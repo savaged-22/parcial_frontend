@@ -1,0 +1,39 @@
+<section class="card form-card">
+  <div class="card-header">
+    <h2>Registrar Nuevo Torneo</h2>
+  </div>
+  <div class="form-container">
+    <input type="text" [(ngModel)]="nuevoTorneo.nombre" placeholder="Nombre del Torneo" class="input-field" />
+    <input type="text" [(ngModel)]="nuevoTorneo.deporte" placeholder="Deporte" class="input-field" />
+    <input type="text" [(ngModel)]="nuevoTorneo.ciudad" placeholder="Ciudad" class="input-field" />
+    <button class="btn-primary" (click)="crearTorneo()">Guardar Torneo</button>
+  </div>
+</section>
+
+<section class="card">
+  <div class="card-header">
+    <h2>Torneos Activos</h2>
+    <button class="btn-primary" (click)="cargarTorneos()">Refrescar</button>
+  </div>
+  
+  <div class="table-container">
+    <table class="minimalist-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Deporte</th>
+          <th>Ciudad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let torneo of torneos">
+          <td class="id-column" title="{{ torneo.id }}">#...{{ (torneo.id || '').toString().slice(-4) }}</td>
+          <td>{{ torneo.nombre }}</td>
+          <td>{{ torneo.deporte }}</td>
+          <td>{{ torneo.ciudad }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
