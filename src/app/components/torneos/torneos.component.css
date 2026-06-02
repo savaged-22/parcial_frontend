@@ -1,0 +1,71 @@
+.form-card { margin-bottom: 2rem; }
+.form-container { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+.input-field { padding: 0.6rem; border: 1px solid #cbd5e1; border-radius: 4px; flex-grow: 1; }
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #1e293b;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.minimalist-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.minimalist-table th,
+.minimalist-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.minimalist-table th {
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.minimalist-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.id-column {
+  color: #94a3b8;
+  font-weight: 500;
+}
