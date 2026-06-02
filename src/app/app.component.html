@@ -1,16 +1,10 @@
-<div class="mi-app-principal">
-  <center><h1>Bienvenidos al Parcial de Web</h1></center>
-  <br>
-  <p>esta es la pagina principal de los torneos, hecha por mi</p>
-  <marquee>En construccion... no tocar</marquee>
-  
-  <div style="background-color: yellow; padding: 10px; margin-top: 20px;">
-    <h3>Torneos Disponibles:</h3>
-    <ul>
-      <!-- aqui van los torneos dspues -->
-      <li>Torneo de Futbol 1</li>
-      <li>Torneo de Basquet</li>
-    </ul>
-    <button style="color: red; font-size: 20px;" (click)="clickBoton()">Ver mas torneos!!</button>
-  </div>
+<div class="app-container">
+  <header class="app-header">
+    <h1>Torneo de pokemon por equipos</h1>
+  </header>
+
+  <main class="content-wrapper">
+    <app-torneos></app-torneos>
+    <app-equipos></app-equipos>
+  </main>
 </div>
